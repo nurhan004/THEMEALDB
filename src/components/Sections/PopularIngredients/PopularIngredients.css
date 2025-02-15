@@ -1,0 +1,38 @@
+.PopularIngredientsContainer{
+    width: 1140px;
+    height: 400px;
+    margin: 0 auto;
+    h2{
+        font-family: cursive;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: white;
+        margin-top: 28px;
+
+    }
+}
+.PopularIngredientsContainerCards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 35px;
+    img{
+        width: 250px;
+    }
+    p{
+        color: #D57D1F;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: cursive;
+        text-align: center;
+        cursor: pointer;
+    }
+    p:hover{
+        color: gold;
+        transition: ease-in 0.2s;
+
+    }
+}

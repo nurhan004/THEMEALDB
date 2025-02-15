@@ -1,0 +1,88 @@
+.HeaderContainer {
+    width: 100%;
+    height: 91px;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #23180d;
+    display: flex;
+    align-items: center;
+
+}
+
+.HeaderContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+   
+}
+
+.BtnContent {
+    display: flex;
+    align-items: center;
+    gap: 47px;
+}
+
+.InputContent {
+    width: 120px;
+    height: 36px;
+    border: 2px solid#767676;
+    border-radius: 4px;
+}
+
+/* .InputContent:focus{
+    border: none;
+    outline: none;
+} */
+.HomeBtn {
+    width: 63px;
+    height: 34px;
+    border: none;
+    background-color: #C52D2F;
+    color: white;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: cursive;
+}
+
+.ApiBtn {
+    width: 45px;
+    height: 34px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: cursive;
+    border: none;
+    align-items: center;
+    color: white;
+    display: flex;
+    background: none;
+    cursor: pointer;
+    justify-content: center;
+
+}
+
+.ApiBtn:hover {
+    background-color: #C52D2F;
+    transition: all 0.3s ease-in-out;
+}
+
+.burger {
+    display: none;
+}
+
+@media(max-width:768px) {
+    .BtnContent {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+.burger .iconMenu {
+    color: white;
+    font-size: 24px;
+}

@@ -1,0 +1,40 @@
+.FooterContainer{
+    width: 100%px;
+    height: 134px;
+    background-color: #23180D;
+
+    
+
+}
+.FooterContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 180px;
+}
+.text1{
+    display: flex;
+}
+.text2{
+    text-align: center;
+}
+.text1 p{
+    color: white;
+    width: 170px;
+}
+.text2 span{
+    color: blue;
+}
+.text2 p{
+    color: white;
+    margin-top: 31px;
+}
+.text3{
+    display: flex;
+    color: white;
+    gap: 18px;
+}
+.img{
+    padding-top: 22px;
+}

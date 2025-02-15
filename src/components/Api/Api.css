@@ -1,0 +1,111 @@
+.ApiContainer{
+    width: 1519px;
+    height: 1400px;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    background-color: #2D2013;
+    color: #FFFFFF;
+
+}
+.ApiContent h4{
+    font-family: cursive;
+font-weight: 700;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: center;
+}
+.apilink{
+font-family: Open Sans;
+font-weight: 400;
+font-style: italic;
+font-size: 14px;
+line-height: 22px;
+color: #C5A1A1;
+}
+.free{
+    padding-top: 31px;
+ p{
+font-family: cursive;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 25px;
+    }
+}
+.test {
+    display: flex;
+    justify-content: center;
+}
+
+.test p {
+    width: 750px;
+    font-family: cursive;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+.mt{
+    margin-top: 25px;
+}
+.Api{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    span{
+        color: #D57D1F;
+
+    }
+}
+.Api p{
+    font-family: cursive;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: center;
+width:750px;
+}
+.Contact p{
+    font-family:cursive;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+margin-bottom: 39px;
+
+ 
+}
+.V1 h1{
+    font-family: cursive;
+font-weight: 600;
+font-size: 36px;
+line-height: 39.6px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 8px;
+
+}
+.V1 p{
+    font-family: cursive;
+font-weight: 700;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 25px;
+
+}
+.Search{
+font-family: cursive;
+font-weight: 400;
+font-style: italic;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: center;
+
+}

@@ -1,0 +1,38 @@
+.browseContainer {
+    width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.browseContainer h2 {
+    font-family: cursive;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.browseContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.browseContent /{
+    color: white;
+}
+
+.browseContent h1 {
+    color: #D57D1F;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: cursive;
+    text-align: center;
+    cursor: pointer;
+}
+
+.browseContent h1:hover {
+    color: gold;
+    transition: ease-in 0.3s;
+}
