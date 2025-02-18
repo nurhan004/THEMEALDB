@@ -18,11 +18,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
-.browseContent /{
-    color: white;
-}
-
 .browseContent h1 {
     color: #D57D1F;
     font-weight: 400;

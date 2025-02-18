@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./RandomMeals.css"
+import { Link } from "react-router-dom";
 
 const API3 = "https://www.themealdb.com/api/json/v1/1/random.php";
 
@@ -28,7 +29,10 @@ function RandomMeals() {
         <div className="RandomMealsCards">
       {randomMeals.map((random) => (
         <div key={random.idMeal}>
+          <Link to={`/meal/${random.idMeal}`} key={random.idMeal}>
           <img src={random.strMealThumb}  />
+          
+          </Link>
           <p>{random.strMeal}</p>
         </div>
       ))}
