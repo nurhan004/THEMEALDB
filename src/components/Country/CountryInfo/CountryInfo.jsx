@@ -25,8 +25,9 @@ function CountryInfo() {
       <h2>Meals from the {country} area</h2>
       <div className="CountryInfoContent">
         {meals.map(meal => (
-          <Link to={`/meal/${meal.idMeal}`} key={meal.idMeal} className="CountryCard">
+          <Link to={`/meal/${meal.idMeal}`}  key={meal.idMeal} className="CountryCard">
             <img src={meal.strMealThumb} alt={meal.strMeal} />
+
             <p className="link">{meal.strMeal}</p>
           </Link>
         ))}

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./PopularIngredients.css";
+import { Link } from "react-router-dom";
 
 const API_URL = "https://www.themealdb.com/api/json/v1/1/list.php?i=list";
 
@@ -29,10 +30,15 @@ function PopularIngredients() {
         <div className="PopularIngredientsContainerCards">
           {ingredients.map((ingredient) => (
             <div className="popular-ingredients-card" key={ingredient.idIngredient}>
-              <img 
-                src={`https://www.themealdb.com/images/ingredients/${ingredient.strIngredient}.png`} />
-              <p>{ingredient.strIngredient}</p>
-            </div>
+  <Link to={`/ingredient/${ingredient.strIngredient}`}>
+    <img 
+      src={`https://www.themealdb.com/images/ingredients/${ingredient.strIngredient}.png`} 
+      alt={ingredient.strIngredient}
+    />
+  </Link>
+  <p>{ingredient.strIngredient}</p>
+</div>
+
           ))}
         </div>
 

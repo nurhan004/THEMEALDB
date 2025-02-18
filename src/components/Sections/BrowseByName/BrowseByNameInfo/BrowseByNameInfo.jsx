@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import apiClient from "../../../../axios/apiClient";
 
 function BrowseByNameInfo() {
@@ -10,13 +10,17 @@ function BrowseByNameInfo() {
         async function fetchMeals() {
             try {
                 const res = await apiClient.get(`/search.php?s=${query}`);
-                console.log(res.data);
-                setMeals(res.data.meals );
+                if (res.data.meals) {
+                    const filteredMeals = res.data.meals.filter(meal =>
+                        meal.strMeal.toLowerCase().startsWith(query.toLowerCase())
+                    );
+                    setMeals(filteredMeals);
+                } 
             } catch (error) {
-                console.error( error);
+                console.error(error);
             }
         }
-        
+
         fetchMeals();
     }, [query]);
 
@@ -24,12 +28,17 @@ function BrowseByNameInfo() {
         <div>
             <div className="latestMealsContainer">
                 <div className="mealsCards">
-                    { meals.map((meal) => (
+                    {
+                        meals.map((meal) => (
                             <div key={meal.idMeal} className="mealsCard">
-                                <img src={meal.strMealThumb} alt={meal.strMeal} />
+                                <Link to={`/meal/${meal.idMeal}`} key={meal.idMeal}>
+                                <img src={meal.strMealThumb} />
+                                
+                                </Link>
                                 <h3>{meal.strMeal}</h3>
                             </div>
-                        ))}
+                        ))
+                }
                 </div>
             </div>
         </div>
